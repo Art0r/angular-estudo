@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Photo } from 'src/app/interfaces/photo';
 import { Post } from 'src/app/interfaces/post';
-import { PostsService } from 'src/app/services/posts.service';
+import { PostsService } from 'src/app/services/posts/posts.service';
 
 @Component({
   selector: 'app-posts',
