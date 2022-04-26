@@ -34,11 +34,12 @@ export class PostComponent implements OnInit {
     this.isLoading = true;
     if (id) {
       this.postsService.getPost(id).subscribe((post) => {
-        this.post.body = post.body,
+        console.log(post);
+        this.post.userId = post.userId,
           this.post.id = post.id,
           this.post.title = post.title,
-          this.post.userId = post.userId
-        this.getUser(post.userId);
+          this.post.body = post.body,
+          this.getUser(post.userId);
       });
       this.isLoading = false;
     }

@@ -1,6 +1,7 @@
 <div class="container">
     <div class="text-input-container">
-        <input class="text-input" type="text" #searchBox (input)="filterPosts(searchBox.value)">
+        <input id="filter-posts" name="filter-posts" class="text-input" type="text" #searchBox
+            (input)="filterPosts(searchBox.value)">
     </div>
     <div class="col-md-12 text-center" *ngIf="isLoading">
         <div class="spinner-border text-primary" role="status">
